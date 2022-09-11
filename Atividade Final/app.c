@@ -335,7 +335,7 @@ static void prvTask_coder(void *pvParameters)
 
 void app_run(void)
 {
-    structQueue = xQueueCreate(10, // Queue length
+    structQueue = xQueueCreate(100, // Queue length
                                1); // Queue item size
 
     if (structQueue == NULL)
@@ -344,7 +344,7 @@ void app_run(void)
         exit(1);
     }
 
-    structQueue_translation = xQueueCreate(10, // Queue length
+    structQueue_translation = xQueueCreate(100, // Queue length
                                            1); // Queue item size. Check if it works with more than one character
 
     if (structQueue_translation == NULL)
@@ -353,7 +353,7 @@ void app_run(void)
         exit(1);
     }
 
-    structQueue_translated = xQueueCreate(10, // Queue length
+    structQueue_translated = xQueueCreate(100, // Queue length
                                            1); // Queue item size. Check if it works with more than one character
 
     if (structQueue_translated == NULL)
@@ -362,7 +362,7 @@ void app_run(void)
         exit(1);
     }
 
-    structQueue_led_blinker = xQueueCreate(10, // Queue length
+    structQueue_led_blinker = xQueueCreate(100, // Queue length
                                            1); // Queue item size. Check if it works with more than one character
 
     if (structQueue_led_blinker  == NULL)
