@@ -79,7 +79,34 @@ static void prvTask_getChar(void *pvParameters)
             vTaskResume(greenTask_blinking_hdlr);
             xTaskNotify(redTask_off_hdlr,01UL, eSetValueWithOverwrite);
             break;
+        case '0':
+            xTaskNotify(redTask_blink_hdlr,01UL, eSetValueWithOverwrite);
+            break;
         case '1':
+            xTaskNotify(redTask_blink_hdlr,01UL, eSetValueWithOverwrite);
+            break;
+        case '2':
+            xTaskNotify(redTask_blink_hdlr,01UL, eSetValueWithOverwrite);
+            break;
+        case '3':
+            xTaskNotify(redTask_blink_hdlr,01UL, eSetValueWithOverwrite);
+            break;
+        case '4':
+            xTaskNotify(redTask_blink_hdlr,01UL, eSetValueWithOverwrite);
+            break;
+        case '5':
+            xTaskNotify(redTask_blink_hdlr,01UL, eSetValueWithOverwrite);
+            break;
+        case '6':
+            xTaskNotify(redTask_blink_hdlr,01UL, eSetValueWithOverwrite);
+            break;
+        case '7':
+            xTaskNotify(redTask_blink_hdlr,01UL, eSetValueWithOverwrite);
+            break;
+        case '8':
+            xTaskNotify(redTask_blink_hdlr,01UL, eSetValueWithOverwrite);
+            break;
+        case '9':
             xTaskNotify(redTask_blink_hdlr,01UL, eSetValueWithOverwrite);
             break;
         case '*':
